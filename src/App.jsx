@@ -16,13 +16,34 @@ return (
 */
 
 function App() {
+
+  const handleExit = () => {
+    window.close();
+    window.location.href = "about:blank";
+  };
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <p>React Hooks Practice Again</p>
+        <p>React Hooks App Upload Practice 4.4</p>
         <Counter />
         <TextInput />
         <TodoList />
+    <button 
+        onClick={handleExit}
+        style={{ 
+          marginTop: '30px', 
+          padding: '10px 20px', 
+          fontSize: '20px',
+          cursor: 'pointer', 
+          borderRadius: '8px'
+        
+        }}
+      >
+        Exit APP to QUIT
+      </button>
+
       </header>
     </div>
   );
@@ -30,13 +51,6 @@ function App() {
 
 
 export default App;
-
-
-
-
-
-
-
 
 
 
