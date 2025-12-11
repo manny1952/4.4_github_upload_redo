@@ -4,6 +4,17 @@ import Counter from './Components/Counter';
 import TextInput from './Components/TextInput';
 import TodoList from './Components/TodoList';
 
+/*function App() {
+return (
+<div>
+<h1>Hello, React!</h1>
+<p>This is a simple React application.</p>
+</div>
+);
+}
+
+*/
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +27,7 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
 
